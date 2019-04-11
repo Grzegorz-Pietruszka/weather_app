@@ -55,7 +55,5 @@ class UI {
         this.feelslike.textContent = `Feels like: ${feelslike_c} Celcius`;
         this.windDirection.textContent = `Wind direction: ${getWind(wind_dir)}`;
         this.wind.textContent = `${getLocalTime(localtime)}`
-
-
     }
 }
