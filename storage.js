@@ -10,13 +10,10 @@ class Storage {
         } else {
             this.city = localStorage.getItem('city');
         }
-
         return {city: this.city }
     }
 
     setLocation(city) {
         localStorage.setItem('city', city);
-
     }
-
 }
