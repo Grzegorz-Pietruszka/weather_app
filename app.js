@@ -13,21 +13,15 @@ document.addEventListener('DOMContentLoaded', getWeather);
 //Change location and display it
 document.getElementById('w-change-btn').addEventListener('click', e => {
     const city = document.getElementById('city').value;
-    
     // change location
     weather.changeLocation(city);
-
     //setItem in Local Storage
     storage.setLocation(city);
-    
     //display changed weather
     getWeather();
-
     //close modal
     $('#locModal').modal('hide');
-
 })
-
 function getWeather() {
     weather.getWeather()
         .then(results => {
